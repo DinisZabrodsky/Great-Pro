@@ -1,2 +1,195 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 
+$active-color: #2196f3;
+$not-active-color: rgba(118, 118, 128, 0.12);
+$primary-text-color: #000;
+$primari-active-text-color: #fafbfe;
+
+* {
+  padding: 0;
+
+  font-family: "Roboto";
+
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0 0;
+}
+
+label {
+  font-family: "Roboto";
+  font-style: normal;
+
+  cursor: pointer;
+}
+
+input {
+  display: none;
+}
+
+svg {
+  display: block;
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.conteiner {
+  display: block;
+  margin: 0 auto;
+
+  width: 100%;
+  max-width: 664px;
+
+  height: 100vh;
+
+  padding: 40px 20px;
+}
+
+.selectButton {
+  display: flex;
+
+  height: 32px;
+  width: 100%;
+  padding: 2px;
+
+  border: none;
+  border-radius: 8px;
+
+  background-color: $not-active-color;
+
+  & > label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: calc(50% - 1px);
+
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: $primary-text-color;
+
+    border-radius: 8px;
+  }
+
+  & > input:checked + label {
+    color: $primari-active-text-color;
+
+    background-color: $active-color;
+    box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.04),
+      0px 3px 8px 0px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.tariff {
+  display: flex;
+
+  margin-top: 40px;
+
+  //   container-type: size;
+
+  & > div:nth-of-type(1) {
+    width: 30%;
+  }
+
+  & > div:nth-of-type(2) {
+    display: flex;
+
+    width: 70%;
+  }
+
+  & li {
+    display: flex;
+    align-items: center;
+
+    height: 40px;
+  }
+}
+
+.tariff-about {
+  & > div {
+    height: 50px;
+  }
+
+  & li {
+    font-size: 12px;
+    font-weight: 400;
+  }
+}
+
+.tariff-plan {
+  & label {
+    flex: 1;
+
+    border: 1px solid #ebebeb;
+
+    transition: flex 250ms linear;
+
+    & .tariffName {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      height: 50px;
+
+      background-color: #fff;
+
+      & span:nth-of-type(1) {
+        font-size: 15px;
+        font-weight: 400;
+      }
+
+      & span:nth-of-type(2) {
+        font-size: 16px;
+        font-weight: 700;
+      }
+    }
+
+    & li {
+      justify-content: center;
+    }
+  }
+
+  & input:checked + label {
+    flex: 1.1;
+    border: none;
+    box-shadow: 0px 6px 6px 0px rgba(33, 150, 243, 0.6);
+
+    & .tariffName {
+      background-color: $active-color;
+      color: $primari-active-text-color;
+
+      & span {
+        font-size: 16px;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+.submitBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 180px;
+  height: 40px;
+
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: $primari-active-text-color;
+
+  background-color: $active-color;
+  border: none;
+  border-radius: 100px;
+}
