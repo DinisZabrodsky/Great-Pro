@@ -36,6 +36,11 @@ svg {
   height: 100vh;
   padding: 40px 20px;
 }
+@media (min-width: 744px) {
+  .conteiner {
+    padding: 40px;
+  }
+}
 
 .selectButton {
   display: flex;
@@ -45,6 +50,11 @@ svg {
   border: none;
   border-radius: 8px;
   background-color: rgba(118, 118, 128, 0.12);
+}
+@media (min-width: 744px) {
+  .selectButton {
+    height: 36px;
+  }
 }
 .selectButton > label {
   display: flex;
@@ -56,6 +66,11 @@ svg {
   line-height: 1.5;
   color: #000;
   border-radius: 8px;
+}
+@media (min-width: 744px) {
+  .selectButton > label {
+    font-size: 20px;
+  }
 }
 .selectButton > input:checked + label {
   color: #fafbfe;
@@ -83,9 +98,19 @@ svg {
 .tariff-about > div {
   height: 50px;
 }
+@media (min-width: 744px) {
+  .tariff-about > div {
+    height: 70px;
+  }
+}
 .tariff-about li {
   font-size: 12px;
   font-weight: 400;
+}
+@media (min-width: 744px) {
+  .tariff-about li {
+    font-size: 16px;
+  }
 }
 
 .tariff-plan label {
@@ -101,13 +126,28 @@ svg {
   height: 50px;
   background-color: #fff;
 }
+@media (min-width: 744px) {
+  .tariff-plan label .tariffName {
+    height: 70px;
+  }
+}
 .tariff-plan label .tariffName span:nth-of-type(1) {
   font-size: 15px;
   font-weight: 400;
 }
+@media (min-width: 744px) {
+  .tariff-plan label .tariffName span:nth-of-type(1) {
+    font-size: 16px;
+  }
+}
 .tariff-plan label .tariffName span:nth-of-type(2) {
   font-size: 16px;
   font-weight: 700;
+}
+@media (min-width: 744px) {
+  .tariff-plan label .tariffName span:nth-of-type(2) {
+    font-size: 18px;
+  }
 }
 .tariff-plan label li {
   justify-content: center;
@@ -124,6 +164,11 @@ svg {
 .tariff-plan input:checked + label .tariffName span {
   font-size: 16px;
   font-weight: 700;
+}
+@media (min-width: 744px) {
+  .tariff-plan input:checked + label .tariffName span {
+    font-size: 18px;
+  }
 }
 
 .submitBtn {

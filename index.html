@@ -11,10 +11,10 @@
       <div class="conteiner">
         <form action="subscription">
           <div class="selectButton">
-            <input id="Month" type="radio" name="subscription" checked />
+            <input id="Month" type="radio" name="subscription" value="month" checked />
             <label for="Month">Month</label>
 
-            <input  id="Year" type="radio" name="subscription" />
+            <input  id="Year" type="radio" name="subscription" value="year"/>
             <label for="Year">Year</label>
           </div>
 
@@ -31,10 +31,10 @@
             
 
             <div class="tariff-plan">
-              <input id="Base" type="radio" name="tariff">
+              <input id="Base" type="radio" name="tariff" value="base" checked>
               <label for="Base">
                 
-                <div class="tariffName">
+                <div class="tariffName" data-tariff="base">
                     <span>Base</span>
                     <span>$9.99</span>
                 </div>
@@ -47,27 +47,27 @@
                   </li>
                   <li>
                     <svg>
-                      <use href="./src/img/icon.svg#icon-accept"></use>
+                      <use href="./src/img/icon.svg#icon-cross"></use>
                     </svg>
                   </li>
                   <li>
                     <svg>
-                      <use href="./src/img/icon.svg#icon-accept"></use>
+                      <use href="./src/img/icon.svg#icon-cross"></use>
                     </svg>
                   </li>
                   <li>
                     <svg>
-                      <use href="./src/img/icon.svg#icon-accept"></use>
+                      <use href="./src/img/icon.svg#icon-cross"></use>
                     </svg>
                   </li>
                 </ul>
               </label>
 
 
-              <input id="Vip" type="radio" name="tariff">
+              <input id="Vip" type="radio" name="tariff" value="vip">
               <label for="Vip">
                 
-                <div class="tariffName">
+                <div class="tariffName" data-tariff="vip">
                     <span>Vip</span>
                     <span>$19.99</span>
                 </div>
@@ -85,22 +85,22 @@
                   </li>
                   <li>
                     <svg>
-                      <use href="./src/img/icon.svg#icon-accept"></use>
+                      <use href="./src/img/icon.svg#icon-cross"></use>
                     </svg>
                   </li>
                   <li>
                     <svg>
-                      <use href="./src/img/icon.svg#icon-accept"></use>
+                      <use href="./src/img/icon.svg#icon-cross"></use>
                     </svg>
                   </li>
                 </ul>
               </label>
 
 
-              <input id="Pro" type="radio" name="tariff">
+              <input id="Pro" type="radio" name="tariff" value="pro">
               <label for="Pro">
                 
-                <div class="tariffName">
+                <div class="tariffName" data-tariff="pro">
                     <span>Pro</span>
                     <span>$24.99</span>
                 </div>
@@ -136,7 +136,9 @@
         </form>
       </div>
     </section>
+
+    <script src="./index.js" type="module"></script>
   </body>
 </html>
 
-<a></a>
+
